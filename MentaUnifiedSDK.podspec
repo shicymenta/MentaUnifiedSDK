@@ -28,8 +28,8 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   spec.author             = { "shicymenta" => "shicy@mentamob.com" }
-  spec.platform     = :ios, "12.0" 
-  spec.ios.deployment_target = '12.0'
+  spec.platform     = :ios, "9.0" 
+  spec.ios.deployment_target = '9.0'
 
   spec.source       = { :git => "https://github.com/shicymenta/MentaUnifiedSDK.git", :tag => "#{spec.version}" }  #
 
@@ -39,4 +39,12 @@ Pod::Spec.new do |spec|
   spec.dependency  'MentaVlionBaseSDK', '0.0.4'
   # spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC']}
   spec.vendored_frameworks     = 'Classes/MentaUnifiedSDK.framework'
+
+  s.subspec 'CSJAdapter' do |mv|
+    mv.dependency 'MentaUnifiedSDK'
+    mv.vendored_frameworks     = 'Classes/Adapters/MentaMVlionAdapter.framework'
+    mv.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
+    mv.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
+  end
+
 end
