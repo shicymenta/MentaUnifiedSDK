@@ -41,7 +41,6 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks     = 'Classes/MentaUnifiedSDK.framework'
 
   s.subspec 'MVlionAdapter' do |mv|
-    mv.dependency 'MentaUnifiedSDK'
     mv.dependency 'MentaVlionSDK'
     mv.vendored_frameworks     = 'Classes/Adapters/MentaMVlionAdapter.framework'
     mv.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
