@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MentaUnifiedSDK"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "MentaUnifiedSDK 基础库"
 
   spec.description  = <<-DESC
@@ -36,12 +36,13 @@ Pod::Spec.new do |spec|
   spec.frameworks       = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
   spec.libraries        = 'c++'
   spec.weak_frameworks = "WebKit"
-  spec.dependency  'MentaVlionBaseSDK', '0.0.4'
+  spec.dependency  'MentaVlionBaseSDK', '0.0.5'
   # spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC']}
   spec.vendored_frameworks     = 'Classes/MentaUnifiedSDK.framework'
 
-  s.subspec 'CSJAdapter' do |mv|
+  s.subspec 'MVlionAdapter' do |mv|
     mv.dependency 'MentaUnifiedSDK'
+    mv.dependency 'MentaVlionSDK'
     mv.vendored_frameworks     = 'Classes/Adapters/MentaMVlionAdapter.framework'
     mv.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
     mv.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
