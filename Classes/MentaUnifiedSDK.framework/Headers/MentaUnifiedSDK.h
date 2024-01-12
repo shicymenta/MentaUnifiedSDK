@@ -14,6 +14,14 @@
 #import <MentaUnifiedSDK/MUSplashAbstractFactory.h>
 #import <MentaUnifiedSDK/MUAPI.h>
 
+#import <MentaUnifiedSDK/MentaUnifiedNativeAd.h>
+#import <MentaUnifiedSDK/MUNativeConfig.h>
+#import <MentaUnifiedSDK/MentaNativeAdDataObject.h>
+#import <MentaUnifiedSDK/MentaUnifiedNativeAdDelegate.h>
+#import <MentaUnifiedSDK/MUNativeAbstractFactory.h>
+#import <MentaUnifiedSDK/MentaNativeAdDataObject.h>
+#import <MentaUnifiedSDK/MentaNativeObject.h>
+
 //! Project version number for MentaUnifiedSDK.
 FOUNDATION_EXPORT double MentaUnifiedSDKVersionNumber;
 

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MentaUnifiedSDK"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.5"
   spec.summary      = "MentaUnifiedSDK 基础库"
 
   spec.description  = <<-DESC
@@ -36,7 +36,7 @@ Pod::Spec.new do |spec|
   spec.frameworks       = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
   spec.libraries        = 'c++'
   spec.weak_frameworks = "WebKit"
-  spec.dependency  'MentaVlionBaseSDK', '0.0.5'
+  spec.dependency  'MentaVlionBaseSDK', '0.0.6'
   # spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC']}
   spec.vendored_frameworks     = 'Classes/MentaUnifiedSDK.framework'
 

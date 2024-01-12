@@ -8,6 +8,9 @@
 #import <Foundation/Foundation.h>
 #import <MentaMVlionAdapter/MentaMVlionSplashAdapter.h>
 
+#import <MentaMVlionAdapter/MentaMVlionNativeAdapter.h>
+#import <MentaMVlionAdapter/MentaMVlionNativeAdView.h>
+
 //! Project version number for MentaMVlionAdapter.
 FOUNDATION_EXPORT double MentaMVlionAdapterVersionNumber;
 

@@ -4,7 +4,7 @@
 //
 //  Created by iMacMe on 2023/11/22.
 //
-#import "MentaUnifiedEnum.h"
+#import <MentaVlionBaseSDK/MentaVlionCommonEnum.h>
 @class MentaUnifiedSplashAd;
 
 @protocol MentaUnifiedSplashAdDelegate <NSObject>
@@ -24,7 +24,7 @@
 - (void)menta_splashAdDidClick:(MentaUnifiedSplashAd *_Nonnull)splashAd;
 
 /// 开屏广告关闭了
-- (void)menta_splashAdDidClose:(MentaUnifiedSplashAd *_Nonnull)splashAd closeMode:(MUSplashAdCloseMode)mode;
+- (void)menta_splashAdDidClose:(MentaUnifiedSplashAd *_Nonnull)splashAd closeMode:(MentaSplashAdCloseMode)mode;
 
 /// 开屏广告曝光
 - (void)menta_splashAdDidExpose:(MentaUnifiedSplashAd *_Nonnull)splashAd;

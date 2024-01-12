@@ -17,20 +17,5 @@ typedef NS_ENUM(NSUInteger, MUSlotType) {
     MUSlotTypeSplash       = 5,
 };
 
-typedef NS_ENUM(NSUInteger, MUSplashAdCloseMode) {
-    MUSplashAdCloseMode_ByClickAd,        // 点击广告关闭
-    MUSplashAdCloseMode_ByClickSkip,      // 点击跳过
-    MUSplashAdCloseMode_TimeOver,         // 倒计时结束时关闭
-};
-
-
-typedef NS_ENUM(NSInteger, MUTrackingEventType) {
-    MUTrackingEventTypeReq,
-    MUTrackingEventTypeFill,
-    MUTrackingEventTypeImp,
-    MUTrackingEventTypeClick,
-    MUTrackingEventTypeFail,
-};
-
 
 #endif /* MentaUnifiedEnum_h */

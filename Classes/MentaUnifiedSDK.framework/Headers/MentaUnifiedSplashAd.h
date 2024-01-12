@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MentaUnifiedSplashAdDelegate.h"
-#import "MentaUnifiedAdSpotDefine.h"
+#import <MentaUnifiedSDK/MentaUnifiedSplashAdDelegate.h>
+#import <MentaUnifiedSDK/MentaUnifiedAdSpotDefine.h>
 @class MUSplashConfig;
 NS_ASSUME_NONNULL_BEGIN
 
