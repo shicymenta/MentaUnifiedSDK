@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MentaUnifiedSDK"
-  spec.version      = "1.0.5"
+  spec.version      = "5.10.10"
   spec.summary      = "MentaUnifiedSDK 基础库"
 
   spec.description  = <<-DESC
