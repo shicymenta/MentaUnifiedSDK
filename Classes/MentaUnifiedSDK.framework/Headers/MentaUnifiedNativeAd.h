@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class MUNativeConfig;
-@interface MentaUnifiedNativeAd : NSObject<MentaUnifiedAdSpotDefine>
+@interface MentaUnifiedNativeAd : NSObject<MentaUnifiedAdSpotDefine, MUAdProtocol>
 /// 初始化时传入的config
 @property (nonatomic, strong, readonly) MUNativeConfig *config;
 

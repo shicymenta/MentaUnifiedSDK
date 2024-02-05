@@ -5,9 +5,10 @@
 //  Created by iMacMe on 2023/11/22.
 //
 #import <MentaVlionBaseSDK/MentaVlionCommonEnum.h>
+#import <MentaUnifiedSDK/MUAdProtocol.h>
 @class MentaUnifiedSplashAd;
 
-@protocol MentaUnifiedSplashAdDelegate <NSObject>
+@protocol MentaUnifiedSplashAdDelegate <MUAdProtocol>
 
 @optional
 
@@ -29,7 +30,7 @@
 /// 开屏广告曝光
 - (void)menta_splashAdDidExpose:(MentaUnifiedSplashAd *_Nonnull)splashAd;
 
-/// 开屏广告 展现的广告信息 曝光之后会触发该回调
+/// 开屏广告 展现的广告信息 曝光之前会触发该回调
 - (void)menta_splashAd:(MentaUnifiedSplashAd *_Nonnull)splashAd bestTargetSourcePlatformInfo:(NSDictionary *_Nonnull)info;
 
 @end

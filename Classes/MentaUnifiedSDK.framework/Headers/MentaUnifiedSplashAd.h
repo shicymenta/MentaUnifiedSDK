@@ -11,7 +11,7 @@
 @class MUSplashConfig;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MentaUnifiedSplashAd : NSObject<MentaUnifiedAdSpotDefine>
+@interface MentaUnifiedSplashAd : NSObject<MentaUnifiedAdSpotDefine, MUAdProtocol>
 
 
 /// 初始化时传入的config

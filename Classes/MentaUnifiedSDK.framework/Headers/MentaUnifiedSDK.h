@@ -14,6 +14,12 @@
 #import <MentaUnifiedSDK/MUSplashAbstractFactory.h>
 #import <MentaUnifiedSDK/MUAPI.h>
 
+
+#import <MentaUnifiedSDK/MURewardVideoConfig.h>
+#import <MentaUnifiedSDK/MURewardVideoAbstractFactory.h>
+#import <MentaUnifiedSDK/MentaUnifiedRewardVideoAd.h>
+#import <MentaUnifiedSDK/MUBaseAbstractFactory.h>
+
 #import <MentaUnifiedSDK/MentaUnifiedNativeAd.h>
 #import <MentaUnifiedSDK/MUNativeConfig.h>
 #import <MentaUnifiedSDK/MentaNativeAdDataObject.h>
@@ -21,6 +27,19 @@
 #import <MentaUnifiedSDK/MUNativeAbstractFactory.h>
 #import <MentaUnifiedSDK/MentaNativeAdDataObject.h>
 #import <MentaUnifiedSDK/MentaNativeObject.h>
+
+#import <MentaUnifiedSDK/MentaUnifiedInterstitialAd.h>
+#import <MentaUnifiedSDK/MentaUnifiedInterstitialAdDelegate.h>
+#import <MentaUnifiedSDK/MUInterstitialConfig.h>
+#import <MentaUnifiedSDK/MUInterstitialAbstractFactory.h>
+
+
+#import <MentaUnifiedSDK/MentaUnifiedNativeExpressAd.h>
+#import <MentaUnifiedSDK/MentaUnifiedNativeExpressAdObject.h>
+#import <MentaUnifiedSDK/MentaUnifiedNativeExpressAdDelegate.h>
+#import <MentaUnifiedSDK/MUNativeExpressConfig.h>
+#import <MentaUnifiedSDK/MUNativeExpressAbstractFactory.h>
+
 
 //! Project version number for MentaUnifiedSDK.
 FOUNDATION_EXPORT double MentaUnifiedSDKVersionNumber;

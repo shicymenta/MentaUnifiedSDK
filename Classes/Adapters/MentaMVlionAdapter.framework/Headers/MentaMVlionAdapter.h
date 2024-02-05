@@ -11,6 +11,12 @@
 #import <MentaMVlionAdapter/MentaMVlionNativeAdapter.h>
 #import <MentaMVlionAdapter/MentaMVlionNativeAdView.h>
 
+#import <MentaMVlionAdapter/MentaMVlionRewardVideoAdapter.h>
+
+#import <MentaMVlionAdapter/MentaMVlionInterstitialAdapter.h>
+
+#import <MentaMVlionAdapter/MentaMVlionNativeExpressAdapter.h>
+
 //! Project version number for MentaMVlionAdapter.
 FOUNDATION_EXPORT double MentaMVlionAdapterVersionNumber;
 

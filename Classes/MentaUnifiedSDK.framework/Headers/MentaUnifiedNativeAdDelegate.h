@@ -5,9 +5,9 @@
 //  Created by iMacMe on 2024/1/9.
 //
 #import <UIKit/UIKit.h>
-
+#import "MUAdProtocol.h"
 @class MentaUnifiedNativeAd,  MentaNativeObject;
-@protocol MentaUnifiedNativeAdDelegate <NSObject>
+@protocol MentaUnifiedNativeAdDelegate <MUAdProtocol>
 @optional
 /// 广告策略服务加载成功
 - (void)menta_didFinishLoadingADPolicy:(MentaUnifiedNativeAd *_Nonnull)nativeAd;

@@ -1,24 +1,19 @@
 //
-//  Header.h
+//  MUNativeExpressAbstractFactory.h
 //  MentaUnifiedSDK
 //
-//  Created by iMacMe on 2023/11/24.
+//  Created by iMacMe on 2024/1/23.
 //
-
 #import <UIKit/UIKit.h>
 #import "MUBaseAbstractFactory.h"
 @class MUAdSource;
-@protocol MUSplashAbstractFactory <MUBaseAbstractFactory>
+@protocol MUNativeExpressAbstractFactory <MUBaseAbstractFactory>
 
 @required
 - (instancetype)initWithSource:(MUAdSource *)source adspot:(id)adspot;
 
 - (void)loadAd;
 
-- (void)showInWindow:(UIWindow *)window;
 
 - (void)destory;
-
-- (void)sendLossNoticeWithInfo:(NSDictionary *)lossInfo;
-
 @end
