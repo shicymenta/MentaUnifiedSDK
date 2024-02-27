@@ -33,7 +33,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/shicymenta/MentaUnifiedSDK.git", :tag => "#{spec.version}" }  #
 
-  spec.frameworks       = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
+  spec.frameworks       = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation'
   spec.libraries        = 'c++'
   spec.weak_frameworks = 'WebKit', 'AdSupport'
   spec.dependency  'MentaVlionBaseSDK', '0.0.8'
@@ -45,24 +45,25 @@ Pod::Spec.new do |spec|
     mv.vendored_frameworks     = 'Classes/Adapters/MentaMVlionAdapter.framework'
     mv.frameworks = 'UIKit', 'MapKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
     mv.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
-    mv.weak_frameworks = 'WebKit'
+    mv.weak_frameworks = 'WebKit', 'AdSupport'
   end
 
-  spec.subspec 'MentaJDYunAdapter' do |jd|
+  spec.subspec 'MJDYunAdapter' do |jd|
     jd.dependency 'JADYun'
     jd.vendored_frameworks     = 'Classes/Adapters/MentaJDYunAdapter.framework'
-    jd.frameworks = 'CoreLocation','CoreMotion', 'MapKit', 'AdSupport','CoreTelephony','UIKit', 'ImageIO','Accelerate','Photos','AssetsLibrary','CoreServices'
+    jd.frameworks = 'CoreLocation','CoreMotion', 'MapKit','CoreTelephony','UIKit', 'ImageIO','Accelerate','Photos','AssetsLibrary','CoreServices'
     jd.libraries = 'z', 'sqlite3'
-    jd.weak_frameworks = 'WebKit'
+    jd.weak_frameworks = 'WebKit', 'AdSupport'
+
   end
 
-  spec.subspec 'MentaTanxAdapter' do |tanx|
+  spec.subspec 'MTanxAdapter' do |tanx|
 
     tanx.dependency 'MentaTanxSDK'
     tanx.vendored_frameworks     = 'Classes/Adapters/MentaTanxAdapter.framework'
-    tanx.frameworks = 'AdSupport', 'CoreMotion', 'CoreTelephony', 'SystemConfiguration',
+    tanx.frameworks = 'CoreMotion', 'CoreTelephony', 'SystemConfiguration'
     tanx.libraries = 'resolv', 'z', 'sqlite3.0'
-    tanx.weak_frameworks = 'WebKit'
+    tanx.weak_frameworks = 'WebKit', 'AdSupport'
   end
 
 end
