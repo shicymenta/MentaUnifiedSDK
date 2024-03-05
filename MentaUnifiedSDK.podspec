@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MentaUnifiedSDK"
-  spec.version      = "5.20.10.01"
+  spec.version      = "5.20.11"
   spec.summary      = "MentaUnifiedSDK 基础库"
 
   spec.description  = <<-DESC
@@ -36,13 +36,13 @@ Pod::Spec.new do |spec|
   spec.frameworks       = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation'
   spec.libraries        = 'c++'
   spec.weak_frameworks = 'WebKit', 'AdSupport'
-  spec.dependency  'MentaVlionBaseSDK', '0.0.8'
+  spec.dependency  'MentaVlionBaseSDK', '0.0.9'
   # spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC']}
   spec.vendored_frameworks     = 'Classes/MentaUnifiedSDK.framework'
 
   spec.subspec 'MVlionAdapter' do |mv|
     mv.dependency 'MentaVlionSDK'
-    mv.vendored_frameworks     = 'Classes/Adapters/MentaMVlionAdapter.framework'
+    mv.vendored_frameworks     = 'Classes/Adapters/Vlion/MentaMVlionAdapter.framework'
     mv.frameworks = 'UIKit', 'MapKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
     mv.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
     mv.weak_frameworks = 'WebKit', 'AdSupport'
@@ -50,7 +50,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'MJDYunAdapter' do |jd|
     jd.dependency 'JADYun'
-    jd.vendored_frameworks     = 'Classes/Adapters/MentaJDYunAdapter.framework'
+    jd.vendored_frameworks     = 'Classes/Adapters/JD/MentaJDYunAdapter.framework'
     jd.frameworks = 'CoreLocation','CoreMotion', 'MapKit','CoreTelephony','UIKit', 'ImageIO','Accelerate','Photos','AssetsLibrary','CoreServices'
     jd.libraries = 'z', 'sqlite3'
     jd.weak_frameworks = 'WebKit', 'AdSupport'
@@ -60,7 +60,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'MTanxAdapter' do |tanx|
 
     tanx.dependency 'MentaTanxSDK'
-    tanx.vendored_frameworks     = 'Classes/Adapters/MentaTanxAdapter.framework'
+    tanx.vendored_frameworks     = 'Classes/Adapters/Tanx/MentaTanxAdapter.framework'
     tanx.frameworks = 'CoreMotion', 'CoreTelephony', 'SystemConfiguration'
     tanx.libraries = 'resolv', 'z', 'sqlite3.0'
     tanx.weak_frameworks = 'WebKit', 'AdSupport'

@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 开屏广告代理
 @property (nonatomic, weak) id <MentaUnifiedRewardVideoDelegate> delegate;
 
+/// 广告是否有效，建议在展示广告之前判断，否则会影响计费或展示失败
+@property (nonatomic, readonly) BOOL isAdValid;
 
 
 - (instancetype)initWithConfig:(MURewardVideoConfig *)config;

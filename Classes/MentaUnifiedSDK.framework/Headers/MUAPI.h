@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @brief 设置ua 外部传入ua后内部不再进行获取ua的操作
- * @discussion iOS ua 为系统全局属性, 一旦更改SDK内部会获取更改后的ua,为避免此情况, 开发者需根据自身情况获取ua 然后原始ua传入MVlionSDK
+ * @discussion iOS ua 为系统全局属性, 一旦更改SDK内部会获取更改后的ua,为避免此情况, 开发者需根据自身情况获取ua 然后原始ua传入SDK
  */
 + (void)setCustomUA:(NSString *)ua;
 
@@ -56,6 +56,19 @@ NS_ASSUME_NONNULL_BEGIN
  * @discussion 可通过该方法传入您的IDFA值, isCanUseIDFA = YES 时 该设置无效, 若您的app有自己获取idfa的获取策略 则将 isCanUseIDFA置为NO, 然后设置该值即可生效
  */
 + (void)setCustomIDFA:(NSString *)idfa;
+
+
+/**
+ * @brief 设置CAID
+ * @param caid 传入idfa值，可选配置 SDK内部不会获取caid
+ * @discussion 虽然设置caid 有助于提升变现收益, 但还是先建议先全面了解caid,再选择是否接入
+ */
++ (void)setCAID:(NSString *)caid;
+/**
+ * @brief 设置CAID version
+ */
++ (void)setCAIDVersion:(NSString *)caidVersion;
+
 
 
 @end

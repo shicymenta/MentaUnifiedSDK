@@ -14,9 +14,6 @@
 #pragma 注意:该文件中的属性或方法 不可更改,   开发者可以忽略
 @protocol MentaUnifiedAdSpotDefine <NSObject>
 
-/// 广告加载容器视图
-@property (nonatomic, weak) UIViewController *viewController;
-
 /// 并行渠道adpater存储器
 @property (nonatomic, strong) NSMutableDictionary *adapterMap;
 
