@@ -50,7 +50,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'MVlionAdapter' do |mv|
     mv.dependency 'MentaUnifiedSDK/Core'
     mv.dependency 'MentaVlionSDK'
-    mv.vendored_frameworks     = 'Classes/MentaMVlionAdapter.framework'
+    mv.vendored_frameworks     = 'Classes/Adapters/MentaMVlionAdapter.framework'
     mv.frameworks = 'UIKit', 'MapKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
     mv.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
     mv.weak_frameworks = 'WebKit', 'AdSupport'
