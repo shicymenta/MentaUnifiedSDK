@@ -1,21 +1,11 @@
 //
-//  MentaMVlionNativeAdView.h
-//  MentaMVlionAdapter
+//  MentaMJDNativeAdView.h
+//  MentaJDYunAdapter
 //
-//  Created by iMacMe on 2024/1/10.
+//  Created by iMacMe on 2024/3/8.
 //
 
 #import <UIKit/UIKit.h>
-#if __has_include(<MVlionSDK/MVlionSDK.h>)
-#import <MVlionSDK/MVlionNativeAdView.h>
-#import <MVlionSDK/MVlionNativeAdDataObject.h>
-
-#else
-#import "MVlionNativeAdView.h"
-#import "MVlionNativeAdDataObject.h"
-
-#endif
-
 
 #if __has_include(<MentaUnifiedSDK/MentaUnifiedSDK.h>)
 
@@ -29,15 +19,25 @@
 #import "MentaUnifiedNativeAdDelegate.h"
 #import "MentaUnifiedNativeAd.h"
 
+#endif
 
+#if __has_include(<JADYunCore/JADYunUmbrella.h>)
+#import <JADYunCore/JADYunUmbrella.h>
+#else
+#import <JADYun/JADYunUmbrella.h>
+#endif
+
+#if __has_include(<JADYun/JADNativeAd.h>)
+#import <JADYun/JADNativeAd.h>
+#else
+#import "JADNativeAd.h"
 #endif
 
 
 NS_ASSUME_NONNULL_BEGIN
-@class MVlionNativeAdView, MUAdSource;
-@interface MentaMVlionNativeAdView : MVlionNativeAdView
-
-- (instancetype)initWithDataObject:(MVlionNativeAdDataObject *)dataObject
+@class MUAdSource;
+@interface MentaMJDNativeAdView : UIView
+- (instancetype)initWithDataObject:(JADNativeAd *)dataObject
                           delegate:(id<MentaUnifiedNativeAdDelegate>)delegate
                             adSpot:(MentaUnifiedNativeAd *)adSpot
                             source:(MUAdSource *)source;
@@ -50,6 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) CGSize logoSize;
 
 - (void)destoryNativeAdView;
+
 @end
 
 NS_ASSUME_NONNULL_END

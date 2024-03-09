@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  广告价格 单位 分 如果广告平台返回则有值  否则为 -1
  */
-@property (nonatomic, assign) NSInteger price;
+@property (nonatomic, strong) NSNumber *price;
 
 /**
  各个广告平台的adIcon 瑞狮 广点通 穿山甲 京东 等等

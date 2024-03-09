@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 广告位id
 @property (nonatomic, copy) NSString *slotId;
 
-// 广告位尺寸 所有广告位必须要传 默认 320x180
+// 广告位尺寸 所有广告位必须要传 默认 屏幕宽高
 // 注: adSize 不意味着广告返回的真正宽高
 @property (nonatomic) CGSize adSize;
 
