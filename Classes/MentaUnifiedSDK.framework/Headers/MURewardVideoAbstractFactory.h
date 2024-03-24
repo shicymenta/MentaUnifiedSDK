@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MUBaseAbstractFactory.h"
+#import <MentaUnifiedSDK/MUBaseAbstractFactory.h>
 
 @class MUAdSource;
 

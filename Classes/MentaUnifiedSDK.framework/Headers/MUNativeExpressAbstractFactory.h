@@ -5,7 +5,7 @@
 //  Created by iMacMe on 2024/1/23.
 //
 #import <UIKit/UIKit.h>
-#import "MUBaseAbstractFactory.h"
+#import <MentaUnifiedSDK/MUBaseAbstractFactory.h>
 @class MUAdSource;
 @protocol MUNativeExpressAbstractFactory <MUBaseAbstractFactory>
 

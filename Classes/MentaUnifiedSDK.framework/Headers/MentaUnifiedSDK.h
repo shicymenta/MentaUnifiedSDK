@@ -27,6 +27,8 @@
 #import <MentaUnifiedSDK/MUNativeAbstractFactory.h>
 #import <MentaUnifiedSDK/MentaNativeAdDataObject.h>
 #import <MentaUnifiedSDK/MentaNativeObject.h>
+#import <MentaUnifiedSDK/MentaNativeAdMaterialObject.h>
+
 
 #import <MentaUnifiedSDK/MentaUnifiedInterstitialAd.h>
 #import <MentaUnifiedSDK/MentaUnifiedInterstitialAdDelegate.h>
@@ -39,6 +41,12 @@
 #import <MentaUnifiedSDK/MentaUnifiedNativeExpressAdDelegate.h>
 #import <MentaUnifiedSDK/MUNativeExpressConfig.h>
 #import <MentaUnifiedSDK/MUNativeExpressAbstractFactory.h>
+
+#import <MentaUnifiedSDK/MentaUnifiedBannerAdDelegate.h>
+#import <MentaUnifiedSDK/MentaUnifiedBannerAd.h>
+#import <MentaUnifiedSDK/MUBannerConfig.h>
+#import <MentaUnifiedSDK/MUBannerAbstractFactory.h>
+
 
 
 //! Project version number for MentaUnifiedSDK.

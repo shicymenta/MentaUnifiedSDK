@@ -17,7 +17,15 @@
 
  @param unifiedNativeAdDataObjects 广告数据数组
  */
-- (void)menta_nativeAdLoaded:(NSArray<MentaNativeObject *> * _Nullable)unifiedNativeAdDataObjects;
+- (void)menta_nativeAdLoaded:(NSArray<MentaNativeObject *> * _Nullable)unifiedNativeAdDataObjects nativeAd:(MentaUnifiedNativeAd *_Nullable)nativeAd;
+
+/**
+ 广告数据回调
+
+ @param unifiedNativeAdDataObjects 广告数据数组
+ */
+- (void)menta_nativeAdLoaded:(NSArray<MentaNativeObject *> * _Nullable)unifiedNativeAdDataObjects;__attribute__((deprecated("该回调已废弃")));
+
 
 /// 信息流自渲染加载失败
 - (void)menta_nativeAd:(MentaUnifiedNativeAd *_Nonnull)nativeAd didFailWithError:(NSError * _Nullable)error description:(NSDictionary *_Nonnull)description;

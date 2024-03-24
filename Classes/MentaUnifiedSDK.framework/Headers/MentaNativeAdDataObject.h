@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+@class MentaNativeAdMaterialObject;
 typedef NS_ENUM(NSUInteger, MentaNativeAdPlatform) {
     MentaNativeAdPlatform_Unknown, // 未知
     MentaNativeAdPlatform_MVlion,  // 瑞狮
@@ -18,25 +18,6 @@ typedef NS_ENUM(NSUInteger, MentaNativeAdPlatform) {
 };
 
 NS_ASSUME_NONNULL_BEGIN
-@interface MentaNativeAdMaterialObject : NSObject
-
-/**
- 素材宽度, 如果广告平台返回 则有值
- */
-@property (nonatomic, assign) NSInteger materialWidth;
-
-/**
- 素材高度 如果广告平台返回 则有值
- */
-@property (nonatomic, assign) NSInteger materialHeight;
-
-/**
- 素材url
- */
-@property (nonatomic, copy) NSString *materialUrl;
-
-
-@end
 @interface MentaNativeAdDataObject : NSObject
 // 广告标题
 @property (nonatomic, copy) NSString *title;
